@@ -50,9 +50,6 @@ def extract_text_from_pdf_text_layer(path):
 
 
 def pdf_to_images(path):
-    """
-    Конвертация PDF-страниц в изображения без poppler.
-    """
     images = []
     reader = PdfReader(path)
     for i, page in enumerate(reader.pages):
